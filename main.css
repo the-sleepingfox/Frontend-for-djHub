@@ -7,6 +7,11 @@ img{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #projects--wrapper{
     max-width: 600px;
     margin: 0 auto;
@@ -17,9 +22,13 @@ img{
 }
 
 .project--card{
+    box-shadow: 1px 1px 5px grey;
+    background-color: #f8f8fb;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2em;
+    margin: 1em;
     margin-top: 2em;
     padding: 1em;
     align-items: center;
@@ -52,4 +61,33 @@ img{
     background-color: #fff;
     border-radius: 5px;
     padding: 10px;
+}
+
+.login--logout{
+    max-width: 580px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border: 1px solid #eaeaeb;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.login--logout a{
+    background-color: #f8f8fb;
+    color: grey;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid grey;
+    transition: ease-in-out 0.2s;
+}
+
+.login--logout a:hover{
+    color: white;
+    box-shadow: 1px 1px 5px grey;
+    background-color: grey;
 }
